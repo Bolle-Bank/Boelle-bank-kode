@@ -26,11 +26,11 @@ internal class Program
             Console.ForegroundColor = ConsoleColor.DarkGray;
             string valg = Console.ReadLine()!;
             Console.ForegroundColor = ConsoleColor.White;
-            if (valg == "Ja")
+            if (valg == "Ja" || valg == "ja")
             {
                 break;
             }
-            else if (valg == "Nej")
+            else if (valg == "Nej" || valg == "nej")
             {
                 Console.WriteLine("Jamen så vil du gerne have en konto");
                 Console.WriteLine("Hvad skal dit brugernavn være?");
@@ -70,14 +70,14 @@ internal class Program
             Console.ForegroundColor = ConsoleColor.DarkGray;
             string valg = Console.ReadLine()!;
             Console.ForegroundColor = ConsoleColor.White;
-            if (valg == "Logud")
+            if (valg == "Logud" || valg == "logud" || valg =="LogUd")
             {
                 Console.WriteLine("Du har valgt at skride");
                 nuværendeKonto = null;
                 Main(args);
                 return;
             }
-            else if (valg == "Ændre saldo")
+            else if (valg == "Ændre saldo" || valg =="ændre saldo" || valg =="Ændre Saldo")
             {
                 Console.WriteLine("Hvor meget vil du hæve/indsætte på konto?");
                 double antal = 0;
